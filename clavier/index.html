@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+ 	<script type="text/javascript" src="json/caracters.json"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>	
+	<script type="text/javascript" src="js/all.js"></script>	
+	<title>Clavier</title>
+</head>
+<body>
+
+
+	<!-- header -->
+	<section class="header">
+
+		<div class="row-zero">
+			<img src="img/img2.png">
+			<div class="welcome-containter">
+				<h1>Bienvenus sur le clavier vertuel</h1>			
+			</div>
+			<img class = "invisible-img" src="img/img2.png">
+		</div>
+
+	</section>
+
+	<div class="root-container">
+
+		<!-- body -->
+		<section class="main-container">		
+			<!-- control btn -->
+			<div class="control-bnt-container">
+				<div class="type-text-container">
+					<select id="text-list">
+						<option value="1">Arial, sans-serif</option>
+						<option value="2">Verdana, sans-serif</option>
+						<option value="3">Helvetica, sans-serif</option>
+						<option value="4">Tahoma, sans-serif</option>
+						<option value="5">Trebuchet MS, sans-serif</option>
+						<option value="6">Times New Roman, serif</option>
+						<option value="7">Georgia, serif</option>
+						<option value="8">Garamond, serif</option>
+						<option value="9">Courier New, monospace</option>
+						<option value="10">Brush Script MT, cursive</option>
+					</select>
+
+					
+
+				</div>			
+
+
+				<div class="size-text-container">
+					<i class="fa-solid fa-text-width"></i>
+					<input id="size-text" type="text">
+				</div>
+
+				<div class="position-text-container">
+					<i id="toLeft" class="fa-solid fa-align-left"></i>
+					<i id="center" class="fa-solid fa-align-center"></i>
+					<i id="toRight" class="fa-solid fa-align-right"></i>
+				</div>
+			
+			</div>
+
+
+			<!-- editor -->
+			<div class="editor-container">
+				<textarea id="paragraph" autofocus></textarea>
+			</div>
+			
+
+			<!-- keyboard -->
+			<div class="keyboard-containter">
+
+				<div class="all-the-btns">
+
+					<div class="first-range">
+						<button id="btn-1" name="btn-key" class="caracter-btn">²</button>
+						<button id="btn-2" name="btn-key" class="caracter-btn">&</button>
+						<button id="btn-3" name="btn-key" class="caracter-btn">é</button>
+						<button id="btn-4" name="btn-key" class="caracter-btn">"</button>
+						<button id="btn-5" name="btn-key" class="caracter-btn">'</button>
+						<button id="btn-6" name="btn-key" class="caracter-btn">(</button>
+						<button id="btn-7" name="btn-key" class="caracter-btn">-</button>
+						<button id="btn-8" name="btn-key" class="caracter-btn">è</button>
+						<button id="btn-9" name="btn-key" class="caracter-btn">_</button>
+						<button id="btn-10" name="btn-key" class="caracter-btn">ç</button>
+						<button id="btn-11" name="btn-key" class="caracter-btn">à</button>
+						<button id="btn-12" name="btn-key" class="caracter-btn">)</button>
+						<button id="btn-13" name="btn-key" class="caracter-btn">=</button>
+						<button id="btn-14" name="btn-key" class="caracter-btn"><i class="fa-solid fa-arrow-left"></i></button>
+						<button id="btn-15" name="btn-key" class="caracter-btn">Ver num</button>
+						<button id="btn-16" name="btn-key" class="caracter-btn">/</button>
+						<button id="btn-17" name="btn-key" class="caracter-btn">*</button>
+						<!-- <button id="btn-18" name="btn-key" class="caracter-btn">-</button> -->
+					</div>
+
+					<div class="sec-range">
+						<button id="btn-19" name="btn-key" class="caracter-btn"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+						<button id="btn-20" name="btn-key" class="caracter-btn">a</button>
+						<button id="btn-21" name="btn-key" class="caracter-btn">z</button>
+						<button id="btn-22" name="btn-key" class="caracter-btn">e</button>
+						<button id="btn-23" name="btn-key" class="caracter-btn">r</button>
+						<button id="btn-24" name="btn-key" class="caracter-btn">t</button>
+						<button id="btn-25" name="btn-key" class="caracter-btn">y</button>
+						<button id="btn-26" name="btn-key" class="caracter-btn">u</button>
+						<button id="btn-27" name="btn-key" class="caracter-btn">i</button>
+						<button id="btn-28" name="btn-key" class="caracter-btn">o</button>
+						<button id="btn-29" name="btn-key" class="caracter-btn">p</button>
+						<button id="btn-30" name="btn-key" class="caracter-btn">^</button>
+						<button id="btn-31" name="btn-key" class="caracter-btn">$</button>
+						<button id="btn-32" name="btn-key" class="disabled-btn"></button>
+						<button id="btn-33" name="btn-key" class="caracter-btn">7</button>
+						<button id="btn-34" name="btn-key" class="caracter-btn">8</button>
+						<button id="btn-35" name="btn-key" class="caracter-btn">9</button>
+						<!-- <button id="btn-36" name="btn-key" class="caracter-btn">+</button> -->
+					</div>
+
+					<div class="third-range">	
+						<button id="btn-37" name="btn-key" class="caracter-btn">Maj</button>
+						<button id="btn-38" name="btn-key" class="caracter-btn">q</button>
+						<button id="btn-39" name="btn-key" class="caracter-btn">s</button>
+						<button id="btn-40" name="btn-key" class="caracter-btn">d</button>
+						<button id="btn-41" name="btn-key" class="caracter-btn">f</button>
+						<button id="btn-42" name="btn-key" class="caracter-btn">g</button>
+						<button id="btn-43" name="btn-key" class="caracter-btn">h</button>
+						<button id="btn-44" name="btn-key" class="caracter-btn">j</button>
+						<button id="btn-45" name="btn-key" class="caracter-btn">k</button>
+						<button id="btn-46" name="btn-key" class="caracter-btn">l</button>
+						<button id="btn-47" name="btn-key" class="caracter-btn">m</button>
+						<button id="btn-48" name="btn-key" class="caracter-btn">ù</button>
+						<button id="btn-49" name="btn-key" class="caracter-btn">*</button>
+						<button id="btn-50" name="btn-key" class="caracter-btn"><i class="fa-solid fa-arrow-turn-down" style="transform: rotate(90deg);"></i></button>
+						<button id="btn-51" name="btn-key" class="caracter-btn">4</button>
+						<button id="btn-52" name="btn-key" class="caracter-btn">5</button>
+						<button id="btn-53" name="btn-key" class="caracter-btn">6</button>
+					</div>
+
+					<div class="forth-range">
+						<button id="btn-54" name="btn-key" class="caracter-btn"><i class="fa-solid fa-arrows-up-to-line"></i></button>
+						<button id="btn-55" name="btn-key" class="caracter-btn"><</button>
+						<button id="btn-56" name="btn-key" class="caracter-btn">w</button>
+						<button id="btn-57" name="btn-key" class="caracter-btn">x</button>
+						<button id="btn-58" name="btn-key" class="caracter-btn">c</button>
+						<button id="btn-59" name="btn-key" class="caracter-btn">v</button>
+						<button id="btn-60" name="btn-key" class="caracter-btn">b</button>
+						<button id="btn-61" name="btn-key" class="caracter-btn">n</button>
+						<button id="btn-62" name="btn-key" class="caracter-btn">,</button>
+						<button id="btn-63" name="btn-key" class="caracter-btn">;</button>
+						<button id="btn-64" name="btn-key" class="caracter-btn">:</button>
+						<button id="btn-65" name="btn-key" class="caracter-btn">!</button>
+						<button id="btn-66" name="btn-key" class="caracter-btn"><i class="fa-solid fa-arrows-up-to-line"></i></button>	
+						<button id="btn-67" name="btn-key" class="caracter-btn">1</button>
+						<button id="btn-68" name="btn-key" class="caracter-btn">2</button>
+						<button id="btn-69" name="btn-key" class="caracter-btn">3</button>
+						<!-- <button id="btn-70" name="btn-key" class="caracter-btn">Entr</button>	 -->		
+					</div>
+
+					<div class="fifth-range">
+						<button id="btn-71" name="btn-key" class="caracter-btn">Ctrl</button>
+						<button id="btn-72" name="btn-key" class="caracter-btn">Fn</button>
+						<button id="btn-73" name="btn-key" class="caracter-btn"><i class="fa-brands fa-windows"></i></button>
+						<button id="btn-74" name="btn-key" class="caracter-btn">alt</button>
+						<button id="btn-75" name="btn-key" class="caracter-btn">Sapce</button>	
+						<button id="btn-76" name="btn-key" class="caracter-btn">Alt Gr</button>
+						<button id="btn-77" name="btn-key" class="caracter-btn"><i class="fa-solid fa-table-list"></i></button>
+						<button id="btn-78" name="btn-key" class="caracter-btn">Ctrl</button>
+						<div class="arrows-container">
+							<button id="btn-79" class="disabled-btn"></button>
+							<button id="btn-80" name="btn-key" class="disabled-btn"><i class="fa-solid fa-arrow-up"></i></button>
+							<button id="btn-81" class="disabled-btn"></button>
+							<button id="btn-82" name="btn-key" class="disabled-btn"><i class="fa-solid fa-arrow-left"></i></button>
+							<button id="btn-83" name="btn-key" class="disabled-btn"><i class="fa-solid fa-arrow-down"></i></button>
+							<button id="btn-84" name="btn-key" class="disabled-btn"><i class="fa-solid fa-arrow-right"></i></button>
+						</div>
+						<button id="btn-85" name="btn-key" class="caracter-btn">0</button>
+						<button id="btn-86" name="btn-key" class="caracter-btn">.</button>
+					</div>		
+							
+				</div>
+
+				<div class="mines-plus-enter-btn">
+					<button id="btn-18" name="btn-key" class="caracter-btn">-</button> 
+					<button id="btn-36" name="btn-key" class="caracter-btn-2">+</button>
+					<button id="btn-70" name="btn-key" class="caracter-btn-2">Entr</button>	
+				</div>
+
+			</div>
+
+
+
+		</section>
+
+	</div>
+	
+		<!-- footer -->
+	<!-- 	<section class="footer">
+			
+		</section> -->
+
+		<footer>
+			<div class="copyright">
+				<p>&copy Copyright</p>		
+				<p>Some rights are reserved</p>
+				<p>2022</p>
+			</div>
+		</footer>
+
+
+
+</body>
+</html>
